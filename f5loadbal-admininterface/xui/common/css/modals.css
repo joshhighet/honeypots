@@ -1,0 +1,10 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("base.css");
+
+html { overflow-x: hidden; overflow-y: auto; }	/* IE6 Scrollbar Fix */
+body { padding: 20px; background: #fff; line-height: 136%; }
+body.reboot { padding: 20px; padding-bottom: 0px; background: #fff; line-height: 136%; }
+h2, h3, h4, h5 { margin-top: 2em; }
+
+#timestamp { margin-top: -1em; font-size: 90%; color: #666; }

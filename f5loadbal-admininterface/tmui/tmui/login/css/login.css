@@ -1,0 +1,63 @@
+@import url(/xui/common/css/reset.css);
+@import url(/xui/common/css/fonts.css);
+
+/*  Base Rules
+------------------------------------------------------------------------------*/
+body { background: #c4c2be; font: 75% sans-serif; }
+a { color: #36c; text-decoration: none; }
+a:hover { color: #36f; text-decoration: underline; cursor: pointer; }
+img { border: 0; }
+p { margin: 0 0 15px; }
+
+.badtext { color: red; }
+.goodtext { color: green; }
+.smalltext { font-size: 90%; }
+
+
+/*  Primary Containers
+------------------------------------------------------------------------------*/
+#wrapper { position: absolute; top: 50%; left: 50%; width: 650px; margin: -225px 0 0 -325px; }
+	#window { float: left; width: 100%; padding: 5px; border: 1px solid #999; background: #eae9e5; }
+		#banner { position: relative; float: left; width: 100%; margin-bottom: 5px; background: #738495 url(../images/background_banner.png); }
+		#sidebar { float: left; width: 170px; padding: 15px; }
+			#deviceinfo { width: 100%; overflow: hidden; }
+			#message { display: none; }
+			#loginform { margin: 0; padding: 0; }
+		iframe { float: right; width: 445px; height: 325px; border: 1px solid #bebebe; background: #fff; color: #333; }
+	#copyright { float: left; width: 100%; margin-top: 5px; color: #333; text-align: center; }
+
+/* Banner */
+#banner #logo { float: left; margin: 10px; }
+#banner h1 { margin: 20px 0 0 220px; font-size: 136%; color: #dce0e4; }
+#banner h1 sup { margin-left: 2px; font-size: small; }
+#banner h2 { margin: 0 0 10px 220px; font-size: 122%; color: #b9c2ca; }
+#banner h3 { position: absolute; left: 70px; top: 32px; font-size: 85%; color: #fff; }
+
+/* Sidebar */
+#deviceinfo label { display: block; margin-bottom: 5px; border-bottom: 1px dotted #ccc; font-weight: bold; }
+#deviceinfo p { color: #666; }
+
+/* Login Form */
+#loginform label { display: block; margin-bottom: 3px; font-weight: bold; }
+#loginform input { width: 168px; margin-bottom: 10px; padding: .25em 0; border: 1px solid #bebebe; background: #fff9db; color: #333; font-size: 107%; }
+#loginform ::-ms-reveal{display:none;}
+
+/* Copyright */
+#copyright a { line-height: 1.5em; }
+
+
+/*  Modal
+------------------------------------------------------------------------------*/
+#modal { position: fixed; z-index: 200; top: 0; left: 0; height: 100%; width: 100%; }
+#modal .overlay { position: fixed; top: 0; left: 0; height: 100%; width: 100%; background: #c4c2be; opacity: .75; }
+#modal .overlay { filter: alpha(opacity=75); }
+#modal .content { position: fixed; top: 50%; left: 50%; width: 410px; margin: -100px 0 0 -225px; padding: 20px; border: 1px solid #999; background: #fff; }
+
+
+/*  IE6 Hacks
+------------------------------------------------------------------------------*/
+* html { height: 100%; }
+* html body { height: 100%; }
+* html #modal { position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px'); }
+* html #modal .overlay { position: absolute; }
+* html #modal .content { position: absolute; top: expression((document.documentElement.clientHeight / 2) - 100 + 'px'); margin-top: 0; }

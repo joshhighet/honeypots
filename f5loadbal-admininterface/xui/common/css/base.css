@@ -1,0 +1,31 @@
+/* Base Rules */
+html { overflow-y: hidden; }
+body { background: transparent; font: 75% "FreeSans", Arial, Helvetica, sans-serif; color: #333; }
+a { color: #36c; text-decoration: none; }
+a:hover { color: #36f; text-decoration: underline; cursor: pointer; }
+b, strong, em { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.2em; font-weight: bold; color: #000; }
+h2, h3, h4, h5, h6 { margin-top: 15px; margin-bottom: 7px; }
+h1 { margin-bottom: 10px; padding-bottom: 3px; border-bottom: 1px dotted #999; font-size: 136%; }
+h2 { font-size: 122%; }
+h3 { font-size: 107%; }
+img { border: 0; }
+ol, ul { margin: 1em 0; padding-left: 2em; }
+ul ul { margin: 0; }
+ol li { list-style-type: decimal; }
+ul li { list-style-type: disc; }
+ul li li { list-style-type: circle; }
+ul li li li { list-style-type: square; }
+ol.spaced li, ul.spaced li { margin-bottom: 1em; }
+p { margin-bottom: 1em; }
+table { border-collapse: separate; /* For IE7 */ *border-collapse: collapse; }
+
+.greencheckicon { display: block; padding-left: 25px; background: url(../images/icon_check_green.gif) no-repeat top left; }
+.loadingicon { display: block; padding-left: 25px; background: url(../images/icon_loading.gif) no-repeat top left; }
+.badtext { color: red; }
+.goodtext { color: green; }
+.litetext { color: #666; }
+.smalltext { font-size: 90%; }
+.notice { margin: 1em 0; padding: 5px; border: 1px solid #ffd324; background: #fff9db; color: #666; }
+
+.hideselect select { visibility: hidden !important; }

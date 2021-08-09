@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>BIG-IP&reg; - f5.mydomain.com (XX.XX.XX.XX)</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+	<meta name="copyright" content="(c) Copyright 1996-2017, F5 Networks, Inc., Seattle, Washington. All rights reserved." />
+	<meta name="description" content="BIG-IP&reg; Configuration Utility" />
+	<meta name="author" content="F5 Networks, Inc." />
+	<meta name="robots" content="noindex,nofollow" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="https://f5.mydomain.com/xui/common/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="https://f5.mydomain.com/tmui/tmui/login/css/login.css?" />
+	<script type="text/javascript" src="https://f5.mydomain.com/xui/common/scripts/utility.js?"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		// Break out of the XUI wrapper or frameset
+        if (window.location != window.top.location) {
+            window.top.location = window.location;
+        }
+
+		window.onload = function(e) {
+			// Display error modal if necessary (but don't show it if they've failed authentication
+			// because they just saw the message on the original page load).
+			// Delete some state-preserving cookies if the user has logged out (doesn't have a BIGIPAuthCookie)
+			// Also delete these state cookies if we're rebooting.
+			var authCookieExists = false;
+			//Delete partition & folder cookies, no matter what the situation, to handle cases
+			// where the user's folder/partition permissions may have been changed. bug 415304
+			delCookie("F5_CURRENT_PARTITION");
+            delCookie("F5_CURRENT_FOLDER");
+
+			if ( !authCookieExists || window.location.pathname.indexOf('reboot') != -1) {
+				deleteStatefulCookies();
+			}
+			// Reboot
+			if (window.location.pathname.indexOf('reboot') != -1) {
+				frames['contentframe'].location.replace(path_rebootModal);
+				document.getElementById('legallink').style.display = 'none';
+			}
+			// Welcome
+			else {
+				frames['contentframe'].location.replace('https://f5.mydomain.com/tmui/tmui/login/welcome.jsp');
+				var loginFormObj = document.getElementById('loginform');
+				loginFormObj.style.display = 'block';
+				var msgText;
+				switch (getUrlValue('msgcode')) {
+					case "1":
+					msgText = 'Login failed';
+					break;
+					case "2":
+					msgText = 'Your credentials are no longer valid. Please log in again.';
+					break;
+					case "3":
+					msgText = 'You have been logged out. Please log in again.';
+					break;
+                                        case "4":
+                                        msgText = 'Remote authentication server unreachable; local authentication failed.';
+                                        break;
+				}
+				if (msgText) {
+					var msgObj = document.getElementById('message');
+					msgObj.style.display = 'block';
+					msgObj.innerHTML = msgText;
+				}
+				// Focus on username field
+				var usernameObj = document.getElementById('username');
+				usernameObj.focus();
+				if (usernameObj.select) {
+					usernameObj.select();
+				}
+			}
+		};
+
+		function deleteStatefulCookies() {
+			delCookie("F5_CURRENT_PARTITION");
+            delCookie("F5_CURRENT_FOLDER");
+			delCookie("f5_refreshpage");
+			delCookie("f5currenttab");
+			delCookie("f5formpage");
+			delCookie("f5mainmenuopenlist");
+		}
+
+		function checkFormBeforeSubmit() {
+			// delete any stateful cookies if the username being submitted is different than the previously logged-in user.
+			var enteredUsername = document.getElementById('username').value;
+			var previousUsername = "";
+			if (enteredUsername != previousUsername) {
+				deleteStatefulCookies();
+			}
+			return true;
+		}
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="window">
+            <div id="banner">
+                <!--[if gt IE 6]><!-->
+                    <img id="logo" src="https://f5.mydomain.com/tmui/tmui/login/images/logo_f5.png" alt="F5 Networks Logo">
+                <!--<![endif]-->
+                <!--[if IE 6]>
+                    <img id="logo" src="tmui/login/images/transparent.gif" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='tmui/login/images/logo_f5.png',sizingMethod='auto');" alt="F5 Networks Logo">
+                <![endif]-->
+                <h1>
+                    BIG-IP
+                    Configuration Utility</h1>
+                <h2>F5 Networks, Inc.</h2>
+
+            </div>
+            <div id="sidebar">
+                <div id="deviceinfo">
+                    <label>Hostname</label>
+                    <p title="f5.mydomain.com">f5.mydomain.com</p>
+                    <label>IP Address</label>
+                    <p title="XX.XX.XX.XX">XX.XX.XX.XX</p>
+                </div>
+                <p id="message" class="badtext"></p>
+                <form id="loginform" name="loginform" action="https://f5.mydomain.com/tmui/logmein.html?" method="POST" onsubmit="return checkFormBeforeSubmit();" style="display: none;">
+                    <label>Username</label>
+                    <input type="text" class="login" name="username" id="username" tabindex="1" autocomplete="off" />
+                    <label>Password</label>
+                    <input type="password" class="login" name="passwd" id="passwd" tabindex="2" autocomplete="off" />
+                    <button type="submit" tabindex="3">Log in</button>
+                </form>
+            </div>
+            <iframe src="https://f5.mydomain.com/xui/common/blank.html" id="contentframe" name="contentframe" frameborder="no" scrolling="auto"></iframe>
+        </div>
+        <div id="copyright">(c) Copyright 1996-2017, F5 Networks, Inc., Seattle, Washington. All rights reserved.<br />
+			<a id="legallink"
+            href="https://f5.mydomain.com/tmui/tmui/login/legal.html"
+            target="contentframe" class="smalltext">F5 Networks, Inc. Legal Notices</a>
+        </div>
+    </div>
+	<div id="modal" style="display: none;">
+		<div class="overlay"></div>
+		<div class="content">
+			<p class="badtext">This BIG-IP system has encountered a configuration problem that may prevent the Configuration utility from functioning properly.</p>
+			<p>To prevent adverse effects on the system, F5 Networks recommends that you restrict your use of the Configuration utility to critical tasks only until the problem is resolved. Beware that attempting to modify your configuration in this state with the Configuration utility may cause your configuration to be overwritten.</p>
+			<button onclick="document.getElementById('modal').style.display='none';">Continue</button>
+		</div>
+	</div>
+</body>
+</html>

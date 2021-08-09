@@ -9,7 +9,7 @@ A collection of honeypots created to emulate vulnerable web frontends, applicati
 
 ## Intent
 
-Emulate systems & services in a after bulnerability disclosure or exploit activity to gain insight into attacks within an instrumented environment.
+Emulate systems & services in a after vulnerability disclosure or exploit activity to gain insight into attacks within an instrumented environment.
 
 [thpot](https://manpages.ubuntu.com/manpages/bionic/man8/thpot.8.html)
 

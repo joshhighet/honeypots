@@ -14,12 +14,4 @@ Emulate systems & services in a after vulnerability disclosure or exploit activi
 [thpot](https://manpages.ubuntu.com/manpages/bionic/man8/thpot.8.html)
 
 ---
-
-[SonicWall VPN](sonicwallvpn-login)
-
-[MS Exchange OWA](msexchange-owa)
-
-[F5 Load Balancer ](f5loadbal-admininterface)
-
----
 - 2021 <a href="https://theta.co.nz" target="_blank">Theta</a>.

@@ -1,0 +1,344 @@
+body, p, td {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	color: #2E2F33;
+	line-height: 15px;
+}
+a {
+	color: #003399;
+}
+a:hover {
+	color: #0066CC;
+	text-decoration: underline;
+}
+.half_line_spacing {
+	line-height: 6px;
+	font-size: 6px;
+}
+.gButton, .button {
+	height:21px;
+	font-size: 11px;
+	background: #EFF0F4 url(but_grey_back.gif);
+	border-bottom: 1px solid #5f6071;
+	border-right: 1px solid #5f6071;
+	border-left: 1px solid #5f6071;
+	border-top:1px solid #5f6071;
+	color:#2D254C;
+	text-decoration:none;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0px 4px 1px;
+	font-weight: normal;
+	vertical-align: middle;
+	width:80px;
+}
+.label {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	color: #2e2f33;
+}
+.line3Dlite
+{
+	background-color:#ffffff;
+}
+.line3Ddark
+{
+	background-color:#e3e3e6;
+}
+.swlLabel
+{
+	color: Black;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 12px;
+}
+.swlLabelBold 
+{
+	color: Black;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+}
+#invalid {
+	color: #990000;
+	width: 100%;
+	border: 1px solid #7f7f91;
+	background-color: #eaebf2;
+	padding: 0px;
+	margin:0;
+	background-image: url(alert_bg.gif);
+	background-repeat: no-repeat;
+	text-align: left;
+}
+#invalid_text {
+	margin-left: 45px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+#popup_branding_bar {
+	background-color: #efeff0;
+	margin: -15px -10px 0;
+	width: 110%;
+	height: 42px;
+	text-align: left;
+	text-indent: 10px;
+	display:none;
+} 
+/* for non-IE, override the margin (top) */
+html>body #popup_branding_bar {
+	background-color: #efeff0;
+	margin: -10px -10px 0;
+	width: 110%;
+	height: 42px;
+	text-align: left;
+	text-indent: 10px;
+	display:none;
+}
+
+#popup_error_box {
+	background-color: #ffffff;
+	margin: 0px;
+	margin-top: 10%;
+	padding: 0px 0px 20px;
+	width: 520px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px 0 rgba(230, 230, 230, 1);
+	
+}
+#popup_box_header {
+	height: 67px;
+	padding:0;
+	text-align: left;
+}
+#alert_icon {
+	background:none;
+	height: 40px;
+	width: 40px;
+	margin-top:15px;
+	margin-left:15px;
+	float: left;
+}
+#popup_box_banner {
+	background-image: url(logo_infobox.png);
+	background-repeat: no-repeat;
+	height: 67px;
+	width: 404px;
+	float: left;
+	margin-left: 15px;
+}
+#popup_box_header_text {
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	height: 50px;
+	width: 320px;
+	margin-top: 0px;
+	margin-left: 50px;
+	padding-top: 12px;
+
+	/* don't display this anymore */
+	display:none;
+}
+#popup_box_header_text_centered {
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	height: 50px;
+	margin-top: 0px;
+	padding-top: 12px;
+
+	/* don't display this anymore */
+	display:none;
+}
+#popup_box_text {
+	margin-left: 60px;
+	margin-right: 30px;
+	text-align: left;
+}
+#popup_box_table {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: left;
+}
+#popup_box_title {
+	color: Black;
+	text-align: center;
+	padding-top: 10px;
+}
+#popup_box_err_msg {
+	color: Black;
+	font-weight: bold;
+	text-align: center;
+}
+#popup_box_reflection {
+	height: 30px;
+	width: 520px;
+}
+
+/* ui5 tooltip support */
+.tt_table
+{
+	height: auto; 
+	color:#000;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 11px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.tt_top_left
+{
+	background-image: url(swl_tt_top_left_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_top_left_caret
+{
+	background-image: url(swl_tt_top_left_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_top_side
+{
+	background-image: url(swl_tt_top_side.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	height: 22px;
+}
+
+.tt_top_right
+{
+	background-image: url(swl_tt_top_right_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_top_right_caret
+{
+	background-image: url(swl_tt_top_right_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_right_side
+{
+	background-image: url(swl_tt_right_side.gif);
+	background-repeat: repeat-y;
+	background-position: top right;
+}
+
+.tt_bottom_right
+{
+	background-image: url(swl_tt_bottom_right_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_bottom_right_caret
+{
+	background-image: url(swl_tt_bottom_right_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_bottom_side
+{
+	background-image: url(swl_tt_bottom_side.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	height: 22px;
+}
+
+.tt_bottom_left
+{
+	background-image: url(swl_tt_bottom_left_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_bottom_left_caret
+{
+	background-image: url(swl_tt_bottom_left_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_left_side
+{
+	background-image: url(swl_tt_left_side.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+}
+
+.tt_center
+{
+	background-image: url(swl_tt_center.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	width: 90%;
+}
+
+.tooltip_header 
+{
+	color:#3661ad;
+	font-family:Arial,Tahoma,Verdana;
+	font-size:12px;
+	line-height:17px;
+	font-weight : bold;
+}
+
+.login_box
+{
+	background-image: url(login_box.png);
+}
+
+.popup_error_bg
+{
+	background-color: #efeff0;
+}
+
+.logo_popup
+{
+	background-image: url(logo_popup.gif);
+	border: 0;
+}
+
+body.popup_error_bg div.popup_branding_bar
+{
+	background: none;
+}
+
+body.popup_error_bg img.logo_popup
+{
+	background: none;
+}
+
+.blockLogo
+{
+	width:110px;
+	height:38px;
+	background-image: url(blockLogo.gif);
+}
+

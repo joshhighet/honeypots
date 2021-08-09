@@ -1,0 +1,2559 @@
+body, p, td {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	color: #2E2F33;
+	line-height: 15px;
+}
+a {
+	color: #003399;
+}
+
+a:hover {
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+.blue_bg {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 10px;
+	color: #c1c8fa;
+}
+a.blue_bg {text-decoration: none }
+a.blue_bg:hover {text-decoration: underline; color: #ffffff }
+
+a.no_decor {text-decoration: none; color: #2E2F33 }
+
+.gButton, .button, .redButt, .applyButton, .panelButton, .rtButton, .ltButton {
+	height:20px;
+	line-height: 16px;
+	font-size: 11px;
+	background: #EFF0F4 url(but_grey_back.gif);
+	border: 1px solid #CCCCCC;
+	color:#2D254C;
+	text-decoration:none;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0 0 0 4px;
+	font-weight: normal;
+	vertical-align: middle;
+	width:80px;
+	margin-right: 4px;
+}
+
+.gButton[disabled], .button[disabled], 
+.redButt[disabled], .applyButton[disabled], 
+.panelButton[disabled], .rtButton[disabled],
+.ltButton[disabled] {
+	background: #EFF0F4 url(but_grey_back.gif);
+	height:20px;
+	border: 1px solid #a0a0a0;
+	color:#a0a0a0;
+	cursor: not-allowed;
+}
+
+.rtButton {
+	float: right;
+}
+
+.ltButton {
+	float: left;
+}
+
+input#applyButt {
+	background: #EFF0F4 url(b_accept.gif);
+	font-size: 0;
+	border: 0;
+	padding: 0;
+	color:#EFF0F4;
+	text-decoration:none;
+	cursor: pointer;
+	font-weight: normal;
+	vertical-align: middle;
+	width:74px;
+	height:21px;
+}
+
+input[disabled] {
+	background: #EFF0F4
+}
+
+table tr td .objItemSpacing input[disabled]{
+	background:none;
+}
+
+input.buttonBar
+{
+	height:21px;
+	font-size: 11px;
+	background: #EFF0F4 url(but_grey_back.gif);
+	border: 1px solid #5f6071;
+	color:#2D254C;
+	text-decoration:none;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0 4px 1px;
+	font-weight: normal;
+	vertical-align: middle;
+	width:100%;
+}
+
+/* first set the default margin of select/text field to ZERO */
+select, input[type=text]
+{
+	margin: 0px;
+	font-size: 13px;	/* enforce default when browser font is non-default */
+}
+
+input[type=file]
+{
+	font-size: 13px;	/* enforce default when browser font is non-default */
+}
+
+input[type=password]
+{
+	margin: 0px;       /* enforce default when browser font is non-default */
+}
+
+.breadcrumb {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	color: #676d7f;
+}
+a.breadcrumb {text-decoration: none }
+a.breadcrumb:visited {text-decoration: none; color: #676d7f }
+a.breadcrumb:hover {text-decoration: underline; color: #676d7f }
+
+.toolbar {
+	font-family:  Tahoma, Verdana, sans-serif;
+	font-size: 11px;
+	color: #0e121f;
+}
+a.toolbar {text-decoration: none }
+a.toolbar:visited {text-decoration: none; color: #0e121f }
+a.toolbar:hover {text-decoration: underline; color: #003399 }
+
+.header {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 22px;
+	color: #151516;
+	line-height: 32px;
+	font-weight: bold;
+}
+.alert {
+	color: #990000;
+}
+.box_header {
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #AAAAAA;
+}
+
+.region_bg {
+	background-color: #f5f5f8;
+}
+
+.black {
+	color: #000000;
+}
+.box_columns {
+	font-weight: bold;
+	color: #333333;
+}
+.green {
+	color: #003300;
+}
+.ltgreen {
+	color: #009900;
+}
+.nav_highlight {
+	color: #bacaeb;
+	background-color: #bacaeb;
+}
+.dashboard_header {
+	font-family:  Arial,Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.dashboard_subhead {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #676f86;
+	
+	}
+	
+.dashboard_column {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.dashboard_column_bold {
+	padding-right: 15px;
+	font-weight: bold;
+}
+
+#fwl_table {
+padding:1px;
+}
+
+
+
+.table_column_highlight {
+
+	background-image: url(table_column_back.gif);
+}
+
+.table_column_head {
+
+	background-image: url(table_column_back_tall.gif);
+}
+.column {
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+a.column {color: #101446;}
+a.column:hover {color: #0066CC;}
+
+.main_subhead, .groupLabel {
+	font-size: 11px;
+	font-weight: bold;
+	color: #101446;
+}
+.user_display {
+	color: #c1c8fa;
+	font-size: 10px;
+}
+.popup_header {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#invalid {
+	color: #990000;
+	width: 100%;
+	border: 1px solid #7f7f91;
+	background-color: #eaebf2;
+	padding: 0;
+	margin:0;
+	background-image: url(alert_bg.gif);
+	background-repeat: no-repeat;
+	text-align: left;
+}
+	
+#invalid_text {
+	margin-left: 45px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+hr {
+	color: #EBEBF0;
+	background-color: #EBEBF0;
+	margin: 0;
+	padding: 0;
+	height: 1px;
+	border:0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div .hr hr{
+	color: #EBEBF0;
+	margin: 1em auto 0;
+	background-color: #EBEBF0;
+	line-height:0;
+	padding: 0;
+	height: 1px;
+	border:0;
+}
+
+/* Use this class with <tr> and <td> to get a half-height spacing line */
+.half_line_spacing {
+	line-height: 6px;
+	font-size: 6px;
+}
+
+.calendar_month
+{
+color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.calendar_week
+{
+color: #4a4b4d;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+.calendar_day
+{
+color: #4a4b4d;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+a.calendar_day {text-decoration: none }
+a.calendar_day:hover {text-decoration: underline; color: #003399 }
+
+.calendar_day_off
+{
+color: #939599;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+a.calendar_day_off {text-decoration: none }
+a.calendar_day_off:hover {text-decoration: underline; color: #003399 }
+
+.calendar_bg_off {
+	background-color: #f2f2f2;
+}
+
+.calendar_bg_on {
+	background-color: #bacaeb;
+}
+
+.grey_border {
+	color: #c7c7cd;
+	background-color: #c7c7cd;
+}
+
+.line_div {
+	color: #e3e3e6;
+	background-color: #e3e3e6;
+}
+
+/* make this invisible for now */
+table.line_div {
+	color: white;
+	background-color: white;
+}
+
+.button_row_bg
+{
+	background-color: #7f7f91;
+}
+
+.button_row_image
+{
+	background-image: url(bbar_back.gif);
+}
+
+.bg_navbar_big
+{
+	background-image: url(bg_navbar_big.gif);
+}
+
+.bg_navbar_small
+{
+	background-image: url(bg_navbar_small.gif);
+}
+
+.logo_divider
+{
+	background-image: url(header_button_div.gif);
+	width: 2px;
+	height: 42px;
+	text-indent: -2000px;
+}
+
+.logo_popup
+{
+	background-image: url(logo_popup.gif);
+	border: 0;
+}
+
+.popup_error_bg
+{
+	background-image: url(popup_error_bg.gif);
+	background-repeat: repeat-x;
+}
+
+.tab_background_off
+{
+	background-image: url(tab_background_off.gif);
+}
+
+.tab_background_on
+{
+	background-image: url(tab_background_on.gif);
+}
+
+.tab_bkgnd_small_off
+{
+	background-image: url(tab_bkgnd_small_off.gif);
+}
+
+.tab_bkgnd_small_on
+{
+	background-image: url(tab_bkgnd_small_on.gif);
+}
+
+.tab_left_off
+{
+	background-image: url(tab_left_off.gif);
+	width: 6px;
+	height: 25px;
+	text-indent: -2000px;
+}
+
+.tab_left_on
+{
+	background-image: url(tab_left_on.gif);
+	width: 6px;
+	height: 25px;
+	text-indent: -2000px;
+}
+
+.tab_left_small_off
+{
+	background-image: url(tab_left_small_off.gif);
+	width: 6px;
+	height: 20px;
+	text-indent: -2000px;
+}
+
+.tab_left_small_on
+{
+	background-image: url(tab_left_small_on.gif);
+	width: 6px;
+	height: 20px;
+	text-indent: -2000px;
+}
+
+.tab_right_off
+{
+	background-image: url(tab_right_off.gif);
+	width: 6px;
+	height: 25px;
+	text-indent: -2000px;
+}
+
+.tab_right_on
+{
+	background-image: url(tab_right_on.gif);
+	width: 6px;
+	height: 25px;
+	text-indent: -2000px;
+}
+
+.tab_right_small_off
+{
+	background-image: url(tab_right_small_off.gif);
+	width: 6px;
+	height: 20px;
+	text-indent: -2000px;
+}
+
+.tab_right_small_on
+{
+	background-image: url(tab_right_small_on.gif);
+	width: 6px;
+	height: 20px;
+	text-indent: -2000px;
+}
+
+.tutorial_button
+{
+	background-image: url(tutorial_button.gif);
+	width: 223px;
+	height: 49px;
+	text-indent: -2000px;
+}
+
+.leftnav_bg {
+	background-color: #f5f5f8;
+}
+
+.report_bg_color {
+	background-color: #b2b6c5;
+}
+
+.line_strong {
+	color: #9194A6;
+	background-color: #9194A6;
+}
+
+#invalid_big {
+	width: 100%;
+	border: 1px solid #ccc;
+	background-color: #f3f3ef;
+	padding: 0;
+	margin:0;
+	background-image: url(alert_icon_bg.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-radius: 3px;
+}
+	
+#invalid_text_big {
+	margin-left: 90px;
+	padding-top: 14px;
+	padding-right: 10px;
+	padding-bottom: 14px;
+}
+	
+.logon_user {
+	color: #c1c8fa;
+	font-size: 10px;
+}
+
+.align_arrow {
+	top: 1px;
+	margin-bottom: 5px;
+}
+
+.tab_grey_bg {
+	background-color: #A6A8BA;
+	font-size: 0px;
+	line-height: 0;
+}
+
+.tab_lightgrey_bg {
+	background-color: #DCDCDC;/*#D4D7E6;*/
+	font-size: 0px;
+	line-height: 0;
+}
+
+.tab_white_bg {
+	background-color: #FFFFFF;
+	font-size: 0px;
+	line-height: 0;
+}
+
+
+.imgButt {
+	height:21px;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0 4px 1px;
+	vertical-align: middle;
+}
+
+/* Some of the small gif images have a 1-pixel border which makes them appear raised up
+ * slightly when embedded in text. Use this to bring them down to align with the text. */
+.textEmbedddedImg {
+	vertical-align: -1px;
+}
+
+.actionIcon {
+	border: none;
+	height: 20px;
+	width: 20px;
+}
+
+.roll, .actionIcon, 
+.clickable, img.ttip,
+span.ttip {
+	cursor: pointer;
+	cursor: hand;
+}
+
+span.link {
+	color: #003399;
+	cursor: pointer;
+	cursor: hand;
+}
+
+span.link:hover {
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+.listLabelTopRow {
+	background-image: none;
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+}
+.listLabel {
+	background-image: url(table_column_back_tall.gif);
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 11px;
+}
+.listLabelPopup {
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+	background-image: url(bbar_back.gif);
+}
+
+.listControlPopup
+{
+	background-color: white;
+	border :1px inset;
+}
+
+.listItemSelected
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	color: blue;
+	background-color: white;
+}
+
+.listItemDropped
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 11px;
+	font-weight : normal;
+	color: red;
+	background-color: white;
+}
+
+.listItemModified
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 11px;
+	font-weight : normal;
+	color: black;
+	background-color:white ;
+}
+
+.listItemSelectedDropped
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+	color: red;
+	background-color: white;
+}
+
+.line3Dlite
+{
+	background-color:#ffffff;
+}
+
+.line3Ddark
+{
+	background-color:#e3e3e6;
+}
+
+.table_column_head, .tableHeader, .swlDblHeader {
+	background-image: url(table_column_back_tall.gif);
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 11px;
+}
+.swlDblHeader {
+	background-image: url(bg_navbar_big.gif);
+}
+.tableHeader2 {
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #c7c7cd;
+}
+.tableLine, .listControl, .column {
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+}
+.tablelink {
+	cursor: pointer;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 11px;
+}
+.tablelink:hover
+{
+	color: #ffffff;
+}
+.ruleTable, .swlTable {
+	/*background-color:#EFF6FD;*/
+	color: #101446;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.swlTable {
+	width: 100%;
+}
+
+.swlTable tr {
+	height: 26px;
+}
+
+.swlTable td {
+	border-bottom: 1px solid #E3E3E6;
+}
+
+/* keep row heights on FF3 when table height is fixed and limited number of rows are shown -
+ * FF3 expands the row height to fill the entire table - adding an empty row at the bottom
+ * of the table with the following class keeps in check FF3's unbridled expansionism.
+ */
+.swlTable tr.ff3TableFix {
+	height: 90%;
+	vertical-align: top;
+}
+
+
+.statusBar {
+	color: black;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	background-image: url(bbar_back.gif);
+}
+
+.readonly {
+	background-color :#EAEBF2;
+}
+
+.pageSetting {
+	position: relative;
+	width: 20px;
+	min-width: 20px;
+	min-height: 40px;
+}
+
+.pageSetting img {
+	cursor: pointer;
+}
+
+#pageHeader {
+	height: 24px;
+}
+
+#pageHeader .pgHdrGroup {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 11px;
+	color: #999;
+	padding-left: .5em;
+}
+
+#pageHeader .pgHdrItem {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #101446;
+	padding-left: .7em;
+}
+
+#popup_error_box {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 20px;
+	width: 420px;
+	border: 1px solid #dbdcde;
+}
+#popup_box_header {
+	/*
+	background-image: url(popup_error_boxheader.gif);
+	background-repeat: repeat;
+	*/
+	background:none;
+	height: 54px;
+	/*
+	padding-top: 10px;
+	padding-left: 10px;
+	*/
+	padding:0;
+	text-align: left;
+}
+#popup_box_text {
+	margin-left: 60px;
+	margin-right: 30px;
+	text-align: left;
+}
+#popup_box_table {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
+}
+#popup_box_title {
+	color: Black;
+	text-align: center;
+	padding-top: 10px;
+}
+#popup_box_err_msg {
+	color: Black;
+	font-weight: bold;
+	text-align: center;
+}
+#popup_box_reflection {
+	background-image: url(popup_error_reflection.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+	width: 400px;
+}
+#alert_icon {
+	/*
+	background-image: url(alert_icon.gif);
+	background-repeat: no-repeat;
+	*/
+	background:none;
+	height: 40px;
+	width: 40px;
+	margin-top:15px;
+	margin-left:15px;
+	float: left;
+}
+#popup_box_banner {
+	background-image: url(logo_infobox.png);
+	background-repeat: no-repeat;
+	height: 67px;
+	width: 404px;
+	float: left;
+}
+#popup_box_header_text {
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	height: 50px;
+	width: 320px;
+	margin-top: 0;
+	margin-left: 50px;
+	padding-top: 12px;
+
+	/* don't display this anymore */
+	display:none;
+}
+#popup_box_header_text_centered {
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	height: 50px;
+	margin-top: 0;
+	padding-top: 12px;
+
+	/* don't display this anymore */
+	display:none;
+}
+#popup_branding_bar {
+	background-image: url(pop_header_bg.gif);
+	/*margin: -15px 0 0 -10px;*/
+	width: 100%;
+	height: 42px;
+} 
+
+/*
+#popup_branding_bar img {
+	margin-left: 10px;
+} 
+*/
+
+#swlPageLaunch {
+	display: none;
+	text-decoration: none;
+}
+
+#swlPageLaunch img {
+	border: 0;
+}
+
+/* for non-IE (and for IE7 in Standards Compatability mode), override the margin (top) */
+/*
+html>body #popup_branding_bar {
+	margin-top: -10px;
+} 
+*/
+
+body.popup_error_bg div.popup_branding_bar
+{
+	background: none;
+}
+
+body.popup_error_bg img.logo_popup
+{
+	background: none;
+}
+
+.label {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	color: #2e2f33;
+}
+
+.labelBold {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : Bold;
+	color: #2e2f33;
+}
+
+.labelBig {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight : bold;
+	color: #2e2f33;
+}
+
+listObjTreeView,
+table.listObjTreeView,
+.lc
+{
+}
+
+listObjTreeVwFixed,
+table.listObjTreeVwFixed
+{
+    table-layout: fixed;
+}
+
+tr.listItem,
+tr.listItemContrast,
+tr.listItemBold,
+tr.listItemBoldContrast,
+tr.tableLine,
+tr.tableLineContrast,
+tr.tableLineDisabled,
+tr.tableLineContrastDisabled
+{
+	height: 28px;
+}
+
+.listItem,
+.listItemContrast,
+tr.listItem td,
+tr.listItemContrast td,
+tableLine,
+tableLineContrast,
+tr.tableLine td,
+tr.tableLineContrast td
+{
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	border-top-width: 0;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+	empty-cells: show;
+	/* Don't specify padding-left/right to cause alignment issue */
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.listItemTrunc,
+.listItemContrastTrunc,
+tr.listItemTrunc td,
+tr.listItemContrastTrunc td
+{
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	border-top-width: 0;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+	empty-cells: show;
+	/* Don't specify padding-left/right to cause alignment issue */
+	padding-top: 2px;
+	padding-bottom: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+tr.childRow td
+{
+	background-color: #f6f6f6;
+	border-bottom-width: 0;
+	border-bottom-style: none;
+}
+
+.listItemGrey,
+tr.tableLineDisabled td,
+tr.tableLineContrastDisabled td
+{
+	color: gray;
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	border-top-width: 0;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+	empty-cells: show;
+	/* Don't specify padding-left/right to cause alignment issue */
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+a.listItemGrey
+{
+	color: gray;
+}
+
+.listItemNoBorder
+{
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	empty-cells: show;
+}
+
+.listItemBold,
+.listItemBoldContrast,
+tr.listItemBold td,
+tr.listItemBoldContrast td
+{
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : bold;
+	border-top-width: 0;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+	empty-cells: show;
+}
+
+.listItemBoldNoBorder
+{
+	background-color: #ffffff;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : bold;
+	empty-cells: show;
+}
+
+.listItemHighlighted
+{
+	background-color: #c1c8fa;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	border-top-width: 0;
+	border-top-style: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+	empty-cells: show;
+}
+
+.swlControlBarLeft
+{
+	float: left;
+}
+
+.swlControlBarRight
+{
+	float: right;
+	width: 25%;
+}
+
+.swlTabHeader {
+	padding-left: 5px;
+}
+
+.swlTabHeader img {
+	position: relative;
+	top: 6px;
+}
+
+.swlTabHeader img:hover {
+	cursor: pointer;
+}
+
+.swlListLineSeparator
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #e3e3e6;
+}
+
+.swlListItem,
+.swlListItemContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+.swlListItemBold,
+.swlListItemBoldContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	font-weight : bold;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+.swlListItemBoldUnderline
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	background-color: white;
+	color: Black;
+	font-weight : bold;
+}
+
+.swlListItemWarning
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: white;
+	color: #CC0000;
+	font-weight : normal;
+}
+
+.swlListItemWarningContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: #EFF6FD;
+	color: #CC0000;
+	font-weight : normal;
+}
+
+.swlListItemWarningBold
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: white;
+	color: #CC0000;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemWarningBoldContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: #EFF6FD;
+	color: #CC0000;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemEnabled
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color:white ;
+	color: green;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemEnabledContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: #EFF6FD;
+	color: green;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemDisabled
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color:white ;
+	color: #CC0000;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemDisabledContrast
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color: #EFF6FD;
+	color: #CC0000;
+	font-weight : bold;
+	vertical-align : middle;
+}
+
+.swlListItemHighlight
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	background-color:white;
+	color: blue;
+	font-weight : normal;
+	vertical-align : middle;
+}
+
+.swlExpiredItem
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	color: #707070;
+    text-decoration: line-through;
+}
+span.swlExpiredItem:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.swlMarginL20 {
+	margin-left: 20px;
+}
+
+.swlSection
+{
+	clear: both;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	padding: 15px 6px 0 0;
+}
+
+.swlFieldSet
+{
+	margin: 20px 0 0;
+	clear: left;
+	width: 100%;
+	padding-left: 4px;
+}
+
+.swlFieldSet .swlRow {
+	min-height:	30px;
+}
+
+.swlFieldSet .swlColOne {
+	float: left;
+	width: 360px;
+}
+
+.swlFieldSet .swlColTwo {
+	float: left
+}
+
+.swlFieldSet .swlIndent .swlColOne {
+	float: left;
+	padding-left: 28px;
+	width: 332px;
+}
+
+.swlFieldSet .swlRow span input[type=checkbox] {
+	margin-right: 6px;
+}
+
+.swlFieldSet .swlRow input[type=button] {
+	margin-left: 0;
+}
+
+.swlPanelGroup 
+{
+	background-color: transparent; 
+	position: relative;
+}
+
+.swlPanel 
+{
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	position:absolute;
+	left: 20px;
+	top: 0;
+	margin: 0;
+	padding:6px;
+}
+
+.swlPanelHeader {
+	background: #EFF0F4 url(table_column_back_tall.gif) no-repeat;
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 11px;
+	font-weight: bold;
+	min-height: 22px;
+	padding-top: 6px;
+	margin-bottom: 22px;
+	text-align: left;
+}
+
+.swlPanelHeader span {
+	margin-left: 20px;
+}
+
+.swlPanelSettingsGroup
+{
+	margin: 20px 0 0;
+	clear: left;
+	width: 100%;
+	padding-left: 0;
+}
+
+.swlPanelSetting
+{
+	font: 12px/28px Tahoma, Arial, Verdanna, sans-serif;
+	clear: left;
+}
+
+.swlPanelSetting span {
+	min-height: 28px;
+}
+
+.swlPanelSetting span img {
+	cursor: pointer;
+	border: 0;
+}
+
+.swlPanelRow {
+	font: 12px/28px Tahoma, Arial, Verdanna, sans-serif;
+	clear: left;
+	min-height: 28px;
+}
+
+/* use margin-left because for rounded buttons we add an img following the input 
+ * and margin-right causes a gap */
+.swlPanelRow input[type=button] {
+	margin-left: 1em;
+}
+
+.swlPanelRow span {
+	min-height: 28px;
+}
+
+.swlPanelRow span img {
+	cursor: pointer;
+	border: 0;
+}
+
+.swlPanelRow span:last-child {
+	margin-bottom: 12px;
+}
+
+.swlPanelDependent {
+	padding-left: 4em;
+}
+
+.swlPanelColOne {
+	float: left;
+}
+
+.swlPanelColTwo {
+	float: left;
+}
+
+.swlPanelColThree {
+	float: right;
+}
+
+.swlPanelButtons {
+	float: right;
+	margin: 12px 20px 12px 0;
+}
+
+.swlStylizePopup .swlPanelRow span:last-child {
+	margin-bottom: 0;
+}
+
+.swlPopupButtonBar {
+	float: left;
+	margin-top: 10px;
+}
+
+.swlPopupLeft {
+	float: left;
+	text-align: right;
+	min-width: 45%;
+	width: 45%;
+	position: relative;		/* ensure this layout affects following swlPopupRight elem */
+}
+
+input.swlPopupRight {
+	cursor: text;
+	float: left;
+	margin-left: 1em;
+	width: 204px;
+}
+
+.swlPopupRight button {
+	padding: 8px 0;
+}
+
+.swlPopupCbox {
+	float: right;
+	position: relative;
+	margin-top: 6px;
+}
+
+.swlPopupCboxLabel {
+	float: left;
+	position: absolute;
+	left: 50%;
+	text-align: left;
+}
+
+.swlPopupSelect {
+	text-align: left;
+	width: 204px;
+}
+
+.swlRowChild {
+	display: table-row;
+}
+
+.swlRowChildHidden {
+	display: none;
+}
+
+.swlRowAnchorImgShown {
+	background-image: url(minus.gif);
+	background-repeat: no-repeat;
+	text-decoration:none;
+}
+
+.swlRowAnchorImgHidden {
+	background-image: url(plus.gif);
+	background-repeat: no-repeat;
+	text-decoration:none;
+}
+
+.swlSectionLineLite {
+	background-color: #CEDFE7;
+	background-image: url(clear.gif);
+	clear: both;
+	font-size: 1px;
+	height: 1px;
+	width: 100%;
+}
+
+/* IE6 hacks */
+* html #divButtons {
+	margin-top: 0;
+	padding-top:0;
+}
+
+* html #divButtons .swlErrorMessage {
+	height: 17px;
+}
+
+* html #divButtons .swlPanelColThree {
+	height: 36px;
+}
+
+* html .swlPanelRow {
+	height: 28px;
+}
+
+* html .swlPanelRow span {
+	height: 28px;
+}
+/* end hacks */
+
+.swlPanelToggle {
+	display: none;
+}
+
+.swlLabel 
+{
+	color: Black;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 12px;
+	font-weight : normal;
+}
+
+.swlLabelBold 
+{
+	color: Black;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+}
+
+.swlGroupLabel
+{
+	color:#003366;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+.swlErrorMessage  {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 12px;
+	color: black;
+	font-weight: bold;	
+	background-color:white;
+	border : 1px inset;
+	padding-left:4px;
+}
+
+/* ui5 tooltip support */
+.tt_table
+{
+	/*width: 200px;*/ 
+	height: auto; 
+	color:#000;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size : 11px;
+	text-decoration:none;
+	text-align:start;
+}
+
+.tt_top_left
+{
+	background-image: url(swl_tt_top_left_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_top_left_caret
+{
+	background-image: url(swl_tt_top_left_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_top_side
+{
+	background-image: url(swl_tt_top_side.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	/*width: 150px;*/
+	height: 22px;
+}
+
+.tt_top_right
+{
+	background-image: url(swl_tt_top_right_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_top_right_caret
+{
+	background-image: url(swl_tt_top_right_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_right_side
+{
+	background-image: url(swl_tt_right_side.gif);
+	background-repeat: repeat-y;
+	background-position: top right;
+}
+
+.tt_bottom_right
+{
+	background-image: url(swl_tt_bottom_right_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_bottom_right_caret
+{
+	background-image: url(swl_tt_bottom_right_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 28px;
+	height: 22px;
+}
+
+.tt_bottom_side
+{
+	background-image: url(swl_tt_bottom_side.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	/*width: 150px;*/
+	height: 22px;
+}
+
+.tt_bottom_left
+{
+	background-image: url(swl_tt_bottom_left_corner.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_bottom_left_caret
+{
+	background-image: url(swl_tt_bottom_left_caret.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 29px;
+	height: 22px;
+}
+
+.tt_left_side
+{
+	background-image: url(swl_tt_left_side.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+}
+
+.tt_center
+{
+	background-image: url(swl_tt_center.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	width: 90%;
+	text-align:left;
+}
+
+.tt_title
+{
+	background-image: url(swl_tt_center.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	width: 80%;
+}
+
+.tt_close
+{
+	background-image: url(swl_tt_center.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	width: 10%;
+}
+
+.tooltip_header 
+{
+	color:#3661ad;
+	font-family:Arial,Tahoma,Verdana;
+	font-size:12px;
+	line-height:17px;
+	font-weight : bold;
+}
+
+.tooltip_text
+{
+	color:#2E2F33;
+	font-family:Tahoma,Arial,Verdana;
+	font-size:11px;
+	text-align:left;
+}
+
+.lrg_tooltip_tag
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 10px;
+	font-weight : bold;
+}
+
+.lrg_tooltip_value
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 10px;
+	font-weight : normal;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.tooltipFieldName
+{
+	font-weight : bold;
+	font-style: normal;
+}
+
+.tooltipParamTable
+{
+	margin: 0 0;
+	padding: 0 0;
+	border: 0 none;
+	display: block;
+	width: 100%;
+}
+
+/* This makes the scrolling table work */
+div.swlTabContainer {
+	/* height: 310px;	table body height + table head height*/
+    overflow-y: auto;
+    overflow-x: hidden;
+	margin: 0px 0px;
+	position: relative;
+}
+
+/* IE7 and opera pick this up */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	html>body div.swlTabContainer {
+		width: 100%;
+	}
+}
+
+div.swlTabContainer div.swlTableEntryHScroller {
+	position: absolute;
+	width: 6px;
+	background: #52575e;
+	border: 1px solid #101010;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: alpha(opacity = 50); /* IE patch */
+	opacity: 0.5;
+}
+
+.swlTabFooter {
+	margin: 14px 0;
+}
+
+.swlTabFooter input {
+	margin-left: 1em;
+	vertical-align: baseline;
+}
+
+.swlTabFooter input[type=button] {
+	margin-bottom: 1px;
+}
+
+.swlTabFooter span {
+	margin: 0;
+	vertical-align: baseline;
+}
+
+.swlTabFooter span .roundBtn,
+.swlTabFooter span .roundBtnEnd {
+	padding: 0;
+	vertical-align: top;
+}
+
+.swlTabFooter span.ltSpan,
+.swlContentHdr span.ltSpan {
+	float: left;
+}
+
+.swlContentHdr span.ltSpan {
+	padding-top: 10px;
+}
+
+.swlContentHdr span.rtSpan {
+	float: right;
+}
+
+span.rtSpan {
+	float: right;
+}
+
+.swlPageHeaderLaunch {
+	float: right;
+	margin-top: -30px;
+	padding-right: 10px;
+	position: relative;
+}
+
+.swlPortDisabled {
+	background-image: url(disabled.png);
+	background-repeat: no-repeat;
+	height: 14px;
+}
+
+.swlPortEnabled {
+	background-image: url(checked.png);
+	background-repeat: no-repeat;
+	height:	18px;
+}
+
+.swlPortDisabledGrayed {
+	background-image: url(disabled_gray.png);
+	background-repeat: no-repeat;
+	height: 14px;
+}
+
+.swlPortEnabledGrayed {
+	background-image: url(checked_gray.png);
+	background-repeat: no-repeat;
+	height:	18px;
+}
+
+.swlTabFooter span.rtSpan {
+	float: right;
+	padding-right: 1.5em;
+}
+
+.swlTblContainer {
+	margin: 0 0;
+	padding: 0 0;
+	border: 0 none;
+}
+
+/* This makes the scrolling table work */
+div.swlTblContainer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+}
+ 
+/* The different widths below are due to the way the scroll bar is implamented
+we are keeping these here instead of putting them in the IE css file b/c it 
+is easier to change the width if both numbers are in the same place. */
+
+/* All browsers accept this, but we are targeting IE with this rule */
+div.swlTblContainer table {
+	margin: 0px 0px;
+}
+
+/* All browsers accept this, but we are targeting IE with this rule */
+div.swlTblContainer table>tbody	{  
+    overflow: auto; 
+    height: auto;
+    margin: 0px 0px;
+    overflow-x: hidden;
+	vertical-align: top;
+}
+
+/* Modern browsers accept this (not IE) and we are targetting firefox *
+/* seen by ff2, ff3, safari (win), opera */
+html>/**/body div.swlTblContainer table {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+/* Modern browsers accept this (not IE) and we are targetting firefox */
+html>/**/body div.swlTblContainer table>tbody	{  /* seen by ff2, ff3, safari (win), opera */
+    overflow-y: auto; 
+    height: auto;
+    margin: 0px 0px;
+    overflow-x: hidden;
+}
+
+div.swlTblContainer thead tr	{
+	position:relative;
+	margin: 0px 0px;
+}
+
+div.swlTblContainer tr {
+	height: 26px;
+	max-height: 26px;
+	min-height: 26px;
+}
+
+div.swlTblContainer td {
+	height: 24px;
+	max-height: 24px;
+	min-height: 24px;
+	vertical-align: middle;
+	padding-left: 4px;
+}
+
+/* set this on all subordinate elements */
+div.swlTblContainer td * {
+	max-height: 22px;
+}
+
+/* set this on input, span, a, and select elements (but not on img) */
+div.swlTblContainer td input,
+div.swlTblContainer td span,
+div.swlTblContainer td a,
+div.swlTblContainer td select {
+	height: 22px;
+	min-height: 22px;
+	vertical-align: top;
+	margin: 0 1px;
+}
+
+div.swlTblContainer td img {
+	vertical-align: top;
+}
+
+div.swlTblContainer td .roundBtn {
+    margin-right: 0;
+}
+
+div.swlTblContainer td .roundBtnEnd {
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+.swlTblHdrRow {
+	height: 22px;
+	min-height: 22px;
+	max-height: 22px;
+	background-image: url(table_column_back_tall.gif);
+}
+
+.swlTblHdrRow td {
+	border-bottom: transparent;
+}
+
+.swlTblHdrRow .roundBtn {
+	margin: 0 0 1px 0;
+}
+
+.swlTblHdrRow .roundBtnEnd {
+	margin: 0 4px 1px 0;
+}
+
+.swlTblRowClickable:hover {
+	background-color: #BACAEB;
+	cursor: pointer;
+}
+
+.swlTblFooter {
+	height: 22px;
+	min-height: 22px;
+	max-height: 22px;
+	background-image: url(table_column_back_tall.gif);
+}
+
+.swlTblSummary {
+	height: 68px;
+	min-height: 68px;
+	padding-top: 20px;
+	vertical-align: bottom;
+	color: blue;
+	font-family: arial,verdana,helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	display: none;
+}
+
+.swlTblSummary div {
+	padding-top: 4px;
+}
+
+.swlTblSummary span, .swlTblSummary input {
+	margin: 4px 0 0;
+	padding: 4px 7px;
+	vertical-align: bottom;
+}
+
+.swlTblSummary input[type=button] {
+	margin-bottom: .1em;
+}
+
+.swlAddIcon {
+	padding-left: 20px;
+}
+
+.swlAddIcon img {
+	height: 16px;
+}
+
+.swlInfo {
+	float: right;
+	padding: 6px 1em 0 0;
+}
+
+.swlRefresh {
+	float: right;
+	padding: 6px 1em 0 0;
+}
+
+.swlRefresh > span {
+	padding-right: 2em;
+}
+
+.swlRefresh > span.toggleText {
+	padding-right: 0;
+}
+
+img.toggleUpdate {
+	border: 0;
+	padding: 4px 0 0 2px;
+	margin-left: 4px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+.updInterval {
+	width: 2.4em;
+	height: 20px;
+	font-size: x-small;
+}
+
+/* stats table cell */
+.swlStatsItem
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : normal;
+	color: #339900;
+}
+
+.swlTableItem
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : normal;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+.swlTableItemBold
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : bold;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+.swlTableStatsItem
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : normal;
+	color: #339900;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+.swlStatsItemHeader
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : bold;
+}
+
+.swlTableStatsItemHeader
+{
+	font-family:Tahoma,Arial,Verdana;
+	font-size: 11px;
+	font-weight : bold;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: thin solid #e3e3e6;
+}
+
+/* end of ui5 tooltip support */
+
+/* UI5 heading style for help */
+
+h1 {
+	font-family:  Arial,Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+h2 {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #676f86;
+}
+
+h3 {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #676f86;
+}
+
+h4 {
+	font-size : 11px;
+}
+
+/* misc */
+
+.toolBar
+{
+	background-color: #FFFFFF;
+	border : 1px inset;
+}
+
+.logoBar {
+	background-image: url(header_main_back.png);
+}
+
+.logoBarBtns {
+	padding-top: 10px;
+}
+
+.logoLabel {
+	color: #2E2F33;
+}
+
+.logo_sw_networksecurity {
+	background-image: url(logo_sw_networksecurity.png);
+}
+
+a.logoLabel:hover {text-decoration: underline; color: #003399 }
+
+.logoLabelBold {
+	color: #2E2F33;
+	font-weight: bold;
+}
+
+.logoLink {
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+body.certsBody {
+	padding-bottom: 500px;
+}
+
+/*
+ *	 Use this class with a <div> to get it centered vertically:
+ *	 It also needs to be given an explict height and a top margin of
+ *	-ve half that height, e.g.: style="height:70px; margin-top:-35px;"
+ */
+.vertCentered {
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin: 0;
+}
+
+.swlStatusTable{
+	border-top:1px solid #e3e3e6;
+	border-left:1px solid #e3e3e6;
+	border-right:1px solid #e3e3e6;
+	border-bottom:1px solid #e3e3e6;
+}
+.swlText{
+	padding: 0px 4px 1px;
+	vertical-align: middle;
+}
+.swlTextRed{
+	padding: 0px 4px 1px;
+	vertical-align: middle;
+}
+
+
+/*
+ * Layout definitions for reGetPwd.html:
+ */
+#reGetPwdContainer {
+	width: 440px;
+	margin-top: 15px;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	color: #2e2f33;
+}
+#reGetPwdTopCntnr {
+	height: 45px;
+}
+#reGetPwdImgCntnr {
+	width: 50px;
+	float: left;
+    background: url(exclaim.gif);
+	height: 32px;
+	width: 32px;
+	line-height: 32px; 
+}
+#reGetPwdHdrCntnr {
+	width: 390px;
+	float: right;
+	margin-top: 1px;
+}
+#reGetPwdMainCntnr {
+	height: 50px;
+}
+#reGetPwdPwdBoxCntnr {
+	float: left;
+	padding-left: 60px;
+}
+#reGetPwdBtnCntnr {
+	float: right;
+	text-align: right;
+	padding-right: 60px;
+}
+
+a.close {
+	background:transparent url(close.gif) repeat scroll 0%;
+	height:14px;
+	width:14px;
+	border:0pt none;
+	display:block;
+	float:right;
+	font-size:0px;
+	line-height:0pt;
+	position:relative;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+a.close:hover {
+	background:transparent url(close_hover.gif) repeat scroll 0%;
+}
+
+/* new page view styling */
+
+.viewActionBarLine
+{
+	background-color: #aaaaaa;
+}
+
+.viewActionBarBg
+{
+	width: 99%;
+	height: 23px;
+	background-image: url(bbar_back.gif);
+	/*background-repeat:repeat-x;*/
+	padding: .5em;
+}
+
+.viewSeparator
+{
+	position:relative; 
+	height:15px;
+}
+
+.sectionLine3Ddark
+{
+	width: 100%;
+	height: 1px;
+	background-color:#e3e3e6;
+}
+
+.sectionLine3Dlite
+{
+	width: 100%;
+	height: 1px;
+	background-color:#ffffff;
+}
+
+.pgBoxHeader {
+	border: 1px solid #c7c7cd;
+	padding: 4px 6px 0;
+	margin-bottom: 10px;
+	min-height: 22px;
+	background-color: #f5f5f8;
+	clear: both;
+}
+
+/* for new warning message */
+#popup_warning_box 
+{
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 20px;
+	height:250px;
+	width: 400px;
+	border: 1px solid #dbdcde;
+}
+#popup_warning_bar
+{
+	background-image: url(pop_header_bg.gif);
+	width: 100%;
+	height: 42px;
+}
+#popup_warning_bar img 
+{
+	margin-left: 0px;
+}
+#popup_warning_opt
+{
+	background-image: url(opt_bg.gif);
+	width: 100%;
+	height: 42px;
+}
+#popup_warning_header 
+{
+	height: 54px;
+	padding-top: 10px;
+	padding-left: 10px;
+	text-align: left;
+}
+#warning_icon 
+{
+	background-image: url(alert_icon.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-left:30px;
+}
+#popup_warning_header_text
+{
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 16px;
+	font-weight: bold;
+	color: #E1B016;
+	text-align: left;
+	height: 50px;
+	width: 250px;
+	margin-top: 0;
+	margin-left: 90px;
+	padding-top: 12px;
+}
+#popup_warning_text {
+	margin-left: 60px;
+	margin-right: 30px;
+	text-align: left;
+	font-size: 13px;
+	color: #818181;
+}
+
+.gLabel {
+	color: black;
+	FONT-FAMILY: arial;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.gLabel2 {
+	color: black;
+	FONT-FAMILY: arial;
+	font-size: 8px;
+	font-weight: normal;
+}
+
+div.colorIndicator {
+	border: 1px solid black;
+	height: 10px;
+	width: 10px;
+	margin: 0;
+	padding: 0;
+}
+div.colorSelector {
+}
+div.colorSelector .selectorTable {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+div.colorSelector .selectorTable TD {
+	padding: 0px;
+	margin: 0px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+div.colorSelector .selectorTable .hover {
+	border: 1px solid yellow;
+}
+
+.wizLauncher {
+	background-color:#efeff0;
+}
+
+#chooseBox
+{
+	width:442px;
+	height:291px;
+	margin:0 auto 0 auto;
+	margin-top: 10%;
+	background-image: url(login_box.png);
+	background-color:#ffffff;
+	clear:both;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px 0 rgba(230, 230, 230, 1);
+}
+
+.chooseText
+{
+	padding:100px 80px 80px;
+}
+
+.header_button_logout_o {
+	background-image: url(header_button_logout_o.gif);
+}
+
+.blockLogo
+{
+	width:110px;
+	height:38px;
+	background-image: url(blockLogo.gif);
+}
+
+.whiteSpace30
+{
+	clear:both;
+	height:30px;
+}
+
+.swlPopupInputName
+{
+	float:left;
+	width:90px;
+}
+
+.swlPopupInputField
+{
+	float:left;
+	width:300px;
+}
+
+.alignLeft
+{
+	text-align:left;
+}
+
+.entryCount 
+{
+	font-style: italic;
+	color: #95999b;
+}
+
+.note_superscript
+{
+	background-image: url(note_superscript.png);
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	margin-left:3px;
+	margin-right:3px;
+	vertical-align:top;
+}
+
+.actionBtn
+{
+	width:80px;
+	height:22px;
+	line-height:22px;
+	border:1px solid #b8b8b8;
+	background-image: url(actionBtnBg.png);
+	background-repeat: repeat-x;
+	font-size:11px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.hide
+{
+	display: none;
+}
+
+tr.red_text td
+{
+	color:#ff0000;
+}
+/*
+ * new styles use for logo frame
+ */
+
+.header-0412 {
+	width: 100%;
+	min-width: 950px;
+	background-image: url(header_main_back.png);
+}
+
+.header-0412 .left {
+	float: left;
+	width: 397px;
+	height: 67px;
+	background: url(logo_sw_networksecurity.png) top left no-repeat;
+	left:5px;
+	position:relative;
+}
+
+.header-0412 .right {
+	float: right;
+	width: 520px;
+	height: 39px;
+	text-align: right;
+	color: #0e121f;
+	padding: 28px 25px 0 0;
+	/*background:url(masthd_bgpattern.png) right top no-repeat;*/
+	background:none;
+}
+
+.header-0412 .cl {
+	clear: both;
+}
+
+.header-0412 a {
+	color: #0e121f;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+.header-0412 a:hover {
+	text-decoration: underline;
+}
+
+.mode-0412 {
+	padding: 5px 20px 0 20px;
+	color: #0e121f;
+	text-align: right;
+	height: 21px
+}
+
+.mode-0412 .right2 {
+	text-align: right;
+	width: 210px;
+	float: right;
+}
+
+.mode-0412 .left2 {
+	text-align: left;
+	width: 300px;
+	float: left;
+}
+
+.mode-0412 a {
+	color: #0e121f;
+	text-decoration: none;
+}
+
+.mode-0412 a:hover {
+	text-decoration: underline
+}
+
+.nopad
+{
+	padding:0;
+}
+
+.nomargin
+{
+	margin:0;
+}
+
+tr.table_column_head td,
+tr.listLabel td,
+td.listLabel a.tableLink,
+td.tableHeader a.tableLink,
+tr.tableHeader td,
+tr.swlTblHdrRow td,
+tr.swlTblHdrRow .tableLine,
+tr.swlTblHdrRow .tableLink
+{
+	color:#FFFFFF;
+}
+
+/* section/group header container, sub-table is designed for pagenation */
+.groupHeader {
+	clear: both;
+}
+.groupHeader table td {
+	white-space: nowrap;
+}
+
+/* nowrap in block and show ellipsis if overflow */
+.ellipsisBlock {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+

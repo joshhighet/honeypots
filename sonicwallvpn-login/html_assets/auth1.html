@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="id" content="auth1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="swl_login-6.2.5-391928886(eng).css" rel="stylesheet" type="text/css">
+	<title>SonicWall - Authentication</title>
+	<script type="text/JavaScript" src="jquery-6.2.5-3031828635(eng).js"></script>
+	<script type="text/JavaScript" src="cookies-6.2.5-1331366947(eng).js"></script>
+	<script type="text/JavaScript" src="md5-6.2.5-4190932482(eng).js"></script>
+	<script type="text/JavaScript" src="auth-6.2.5-3374662420(eng).js"></script>
+	<script type="text/JavaScript" src="browserCheck-6.2.5-3804333993(eng).js"></script>
+
+	<script type="text/JavaScript">
+	<!--
+	var strPasswordNeeded = "You must enter a password";
+	var strEnableCookies = "Please enable cookies";
+
+	var strWrongUserPasswd = "Incorrect name/password";
+	var strAdminLoginDisabled = "Administrator login not allowed from here";
+	var strUserLoginDisabled = "User login not allowed from here";
+	var strLoginTimedOut = "Login screen timed out";
+	var strUserLoginNotUnique = "User login denied - Account already in use and uniqueness enabled";
+	var strUserLoginFromWrongLocation = "User login denied - User has no privileges for login from that location";
+	var strWlanNoGuestPrivilege = "User login denied - User has no privileges for WLAN guest service";
+	var strWlanGuestLimit = "Guest service limit reached";
+	var strWlanGuestAlreadyLoggedIn = "Account is already logged in. Please try again later";
+	var strWlanAccountTimeout = "Guest account has expired";
+	var strWlanSessionTimeout = "Guest session has expired";
+	var strUserLoginRadiusTimeout = "User login denied - RADIUS server timeout";
+	var strUserLoginRadiusError = "User login denied - RADIUS configuration error";
+	var strUserLoginRadiusNoMail = "Radius User failed to Login with One-time Password -- Ask Admin for help: configure e-mail address for local user with the same name";
+	var strUserLoginLdapTimeout = "User login denied - LDAP server timeout";
+	var strUserLoginLdapError = "User login denied - LDAP communication or configuration error";
+	var strUserLoginBadEmail = "User login denied - Mail Address(From/To) or SMTP Server is not configured";
+	var strUserSendOTPFailed = "An error has occurred while sending your one-time password";
+	var strLoginErrorDefault = "Login error - See log for details";
+
+	var msgObj = null;
+
+	// -->
+	</script>
+	<script type="text/JavaScript" src="auth1.js"></script>
+
+	<style type="text/css">
+		body {
+			background-color: #efeff0;
+		}
+		#login_box
+		{
+			width:450px;
+			height:320px;
+			margin:0 auto 0 auto;
+			margin-top: 10%;
+			background-image: url(login_box.png);
+			background-color:#ffffff;
+			clear:both;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-shadow: 2px 2px 2px 0 rgba(230, 230, 230, 1);
+		}
+		#error_box
+		{
+			width: 354px;
+			height:40px;
+			margin-left:30px;
+			color: #990000;
+			border: 1px solid #7f7f91;
+			background-color: #eaebf2;
+			background-image: url(alert_bg.gif);
+			background-repeat: no-repeat;
+			text-align: left;
+			clear:both;
+		}
+
+		#error_text
+		{
+			margin-left: 45px;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+		}
+		#admin_reauth_text
+		{
+			margin-left:60px;
+			clear:both;
+		}
+		#username_line,
+		#password_line,
+		#language_line,
+		#button_line,
+		#sslvpn_enabled
+		{
+			padding-left: 30px;
+			clear:both;
+		}
+		.fieldName
+		{
+			float:left;
+			width:60px;
+			margin-left:30px;
+			margin-top: 2px;
+		}
+		.fieldValue
+		{
+			float:left;
+		}
+		#sslvpn_enabled .fieldValue
+		{
+			width: 260px;
+			text-align: right;
+		}
+		.vgap8 { width:354px;height:8px;clear:both; }
+		.vgap15 { width:354px;height:15px;clear:both; }
+		.vgap85 { width:354px;height:85px;clear:both; }
+	</style>
+</head>
+<body>
+
+
+	<form name="standardPass" onsubmit="return(processButn());" action="https://172.16.2.4/auth.cgi" method="POST" target="authTgtFrm">
+<INPUT TYPE="HIDDEN" NAME="param1" VALUE="4D06A6CF78592E51829762734A55573B" disabled><INPUT TYPE="HIDDEN" NAME="param2" VALUE="3A8CAA4E12148839A1AD44141CCC648F" disabled><input type="hidden" name="id" value="94" size="50"/><INPUT TYPE="HIDDEN" NAME="sessId" VALUE="0DD5797A9B67BA06D5B5158C23A145C3" disabled>
+
+		<div id="login_box" align="left">
+			<div class="vgap85"></div>
+			<div id="error_box" style="visibility:hidden;">
+				<div id="error_text">
+				</div>
+			</div>
+			<div id="admin_reauth_text" style="visibility:hidden;">
+				Please enter your password to begin management:
+			</div>
+			<div id="username_line">
+				<div class="fieldName">
+					Username:
+				</div>
+				<div class="fieldValue">
+					<input type="text" id="userName" name="userName" value="" maxlength="128" autocomplete="off" style="width: 180px;">
+				</div>
+			</div>
+			<div class="vgap8"></div>
+			<div id="password_line">
+				<div class="fieldName">
+					Password:
+				</div>
+				<div class="fieldValue">
+					<input type="password" name="pwd" value="" maxlength="63" autocomplete="off" style="width: 180px;">
+				</div>
+			</div>
+			<div class="vgap8"></div>
+			<div id="language_line">
+				<div class="fieldName">
+					Language:
+				</div>
+				<div class="fieldValue">
+					<select name="select2">
+						<option>English</option>
+					</select>
+				</div>
+			</div>
+			<div class="vgap15"></div>
+			<div id="button_line">
+				<div class="fieldName">
+					&nbsp;
+				</div>
+				<div class="fieldValue">
+					<input type="submit" name="Submit" value="Login" class="button" >
+				</div>
+			</div>
+			<div class="vgap8"></div>
+			<div id="sslvpn_enabled" style="visibility:hidden;">
+				<div class="fieldName">
+					&nbsp;
+				</div>
+				<div class="fieldValue">
+					Click <a href="https://172.16.2.4/sslvpnLogin.html" onClick="sslvpnRedirect();">here</a> for sslvpn login
+				</div>
+			</div>
+		</div>
+
+		<input type="hidden" name="uName">
+		<input type="hidden" name="pass">
+		<input type="hidden" name="digest">
+		<input type="hidden" name="connid" disabled>
+	</form>
+	<noscript>
+		<center>
+			<font color="#FFFFFF"><font size="+1">Please turn on JavaScript to login.</font></font>
+		</center>
+	</noscript>
+
+</body>
+</html>

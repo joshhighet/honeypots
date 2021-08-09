@@ -1,0 +1,63 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>Policy Banner</title>
+<link rel=STYLESHEET href="dialogStyle.css" type="text/css">
+<link rel=stylesheet href="swl_styles-6.2.5-1052741330(eng).css" TYPE="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="id" content="policyBanner" >
+<script type="text/JavaScript" src="cookies-6.2.5-1331366947(eng).js"></script>
+<script type="text/JavaScript">
+
+	var polAccepted = false;
+	function doPolicyBannerAccept() {
+		polAccepted = true;
+		window.parent.window.document.getElementById('frameMain').rows="100%,0%,0%"
+	}
+
+	function showPolicyBanner()
+	{
+		window.parent.window.document.getElementById('frameMain').rows="0%,100%,0";
+	}
+
+	var pbEnable = 0;
+	if(pbEnable)
+	{
+		showPolicyBanner();
+	}
+
+</script>
+</head>
+<body>
+<form>
+<center>
+<script type="text/JavaScript">
+<!--
+	var pbMsg = "";
+	pbMsg = pbMsg.replace(/>\n/g, ">\r");
+	pbMsg = pbMsg.replace(/\n/g, "<br>");
+	pbMsg = pbMsg.replace(/>\r/g, ">\n");
+	document.write('<table width="100%" border=0 cellspacing=0 cellpadding=0>');
+	document.write('<tr><td>');
+	document.write(pbMsg);
+	document.write('</td></tr>');
+	document.write('</table>');
+
+	document.write('<br><br>');
+	document.write('<table width="60%" border=0 cellspacing=0 cellpadding=0>');
+	document.write('<tr align="center">');
+	document.write('	<td><input type="button" id="pbAcceptBtn" name="pbAcceptBtn" value="I Accept" onClick="doPolicyBannerAccept();"></td>');
+	document.write('</tr>');
+	document.write('</table>');
+
+// -->
+</script>
+</center>
+</form>
+</body>
+</html>
+

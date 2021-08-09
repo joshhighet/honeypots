@@ -1,0 +1,13 @@
+FROM httpd:latest
+
+LABEL org.opencontainers.image.source https://github.com/thetanz/honeypots
+
+RUN apt-get update -yy
+RUN apt-get upgrade -yy
+RUN apt-get install openssl libapache2-mod-security2 -yy
+RUN mkdir /azhd
+
+COPY pki/ /usr/local/apache2/conf/
+COPY html_assets/ /usr/local/apache2/htdocs/
+COPY httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY modsecurity.conf /etc/modsecurity/modsecurity.conf

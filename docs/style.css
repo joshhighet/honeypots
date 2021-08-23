@@ -1,0 +1,113 @@
+:root {
+  --bg-color:#fb1;
+}
+html {
+  cursor:none;
+}
+body {
+  background:
+    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+  background-size: 40px 60px;
+  overflow:hidden;  
+}
+
+.bee {
+  width:50px;
+  height:50px;
+  background:black;
+  border-radius:50% 75% 0% 75%;
+  background:linear-gradient(-50deg, black 15px, goldenrod 15px, goldenrod 25px, black 25px, black 40px, goldenrod 40px, goldenrod 50px, black 50px);
+  box-shadow:inset 0 0 0 2px black, inset 5px -5px 5px 5px rgba(139,69,19,.5), -10px 20px 35px saddlebrown;  
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:rotate(-20deg);
+}
+.bee:before {
+  content:'';
+  width:35px;
+  height:35px;
+  border-radius:75% 50% 75% 25%;
+  background:radial-gradient(circle at 10px 15px, black 3px, goldenrod 3px, goldenrod 20px, black);
+  box-shadow:0 0 0 2px black; 
+  position:absolute;
+  left:-22px;
+  top:-15px;
+  transform:rotate(30deg);
+}
+.bee:after {
+  content:'';
+  width:30px;
+  height:30px;
+  position:absolute;
+  left:-33px;
+  top:-28px;
+  border-radius:50%;
+  z-index:-1;
+  box-shadow:inset -2px 1px 0 black, 1px -2px 0 var(--bg-color), 3px -3px 0 black;
+  animation:hair .33s linear infinite;
+}
+@keyframes hair {
+  50% { transform:translateY(2px); }
+}
+
+.flip {
+  /*   transition:.25s; */
+  transform:rotate(20deg) scaleX(-1) !important;
+}
+
+.bee .wings {
+  width:50px;
+  height:50px;
+  background:linear-gradient(to bottom left, black, transparent 50px);
+  border-radius:50% 50% 50% 25%;
+  position:absolute;
+  left:25px;
+  top:-25px;
+  opacity:.5;
+  transform-origin:left bottom;
+  perspective:200px;
+  animation:buzz .33s linear infinite;
+}
+@keyframes buzz {
+  50% { transform: scale(.9) rotateY(90deg) rotateX(90deg); }
+}
+
+.bee .limbs {
+  width:10px;
+  height:10px;
+  border-right:2px solid black;
+  border-left:2px solid black;
+  position:absolute;
+  top:100%;
+  left:25px;
+}
+.bee .limbs:before {
+  content:'';
+  width:100%;
+  height:100%;
+  border-right:2px solid black;
+  border-left:2px solid black;
+  position:absolute;
+  top:-20px;
+  left:-33px;
+  transform:rotate(60deg);
+}
+
+.honey_trail {
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background:radial-gradient(circle, var(--bg-color) 45%, brown); 
+  position:absolute;
+  z-index:-1;
+  animation:honey 2s linear .25s forwards;
+}
+@keyframes honey {
+  100% { transform:translateY(300%) scale(.5); opacity:0; }
+}

@@ -5,11 +5,9 @@ title="Theta Cybersecurity" alt="Theta Cybersecurity">
 
 # Honeypots
 
-A collection of honeypots created to emulate vulnerable web frontends, applications and services in response to emerging attacks.
+A collection of web-honeypots created to emulate vulnerable web frontends, applications and services in response to emerging attacks.
 
-## Intent
-
-Emulate systems & services in a after vulnerability disclosure or exploit activity to gain insight into attacks within an instrumented environment.
+Gain insight into emerging and trending attacks within an instrumented environment.
 
 [thpot](https://manpages.ubuntu.com/manpages/bionic/man8/thpot.8.html)
 

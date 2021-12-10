@@ -2,25 +2,14 @@
 
 # Log4j RCE [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
 
-Exploitation Detection
-
-https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b
-
-Technical Blog
-
-https://www.lunasec.io/docs/blog/log4j-zero-day/
-
-Mitigation Advice
-
-https://blog.cloudflare.com/cve-2021-44228-log4j-rce-0-day-mitigation/ 
-
-Apache Notes
-
-https://logging.apache.org/log4j/2.x/security.html
-
-CERT NZ Advisory
-
-https://www.cert.govt.nz/it-specialists/advisories/log4j-rce-0-day-actively-exploited/
+| doc | link |
+|---|---|
+| Exploitation Detection | https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b |
+| Technical Blog | https://www.lunasec.io/docs/blog/log4j-zero-day/ |
+| Mitigation Advice | https://blog.cloudflare.com/cve-2021-44228-log4j-rce-0-day-mitigation/  |
+| Apache Notes | https://logging.apache.org/log4j/2.x/security.html |
+| CERT NZ Advisory | https://www.cert.govt.nz/it-specialists/advisories/log4j-rce-0-day-actively-exploited/ |
+| CrowdStrike Hunt | https://csfalcon.thetadev.services/#/fql/misc?id=apache-log4j |
 
 ### Known Vulnerable Applications
 

@@ -4,20 +4,31 @@
 
 | doc | link |
 |---|---|
-| Theta Full Advisory | https://www.theta.co.nz/news-blogs/cyber-security-blog/critical-security-advisory-log4j-vulnerability/ |\
-| Exploitation Detection | https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b |
-| Technical Blog | https://www.lunasec.io/docs/blog/log4j-zero-day/ |
-| Mitigation Advice | https://blog.cloudflare.com/cve-2021-44228-log4j-rce-0-day-mitigation/  |
+| Exploitation Detection Methods | https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b |
+| Exposure Attack Surface | https://github.com/YfryTchsGD/Log4jAttackSurface |
+| Technical Blog - Lunasec | https://www.lunasec.io/docs/blog/log4j-zero-day/ |
+| Mitigation Advice - Cloudflare | https://blog.cloudflare.com/cve-2021-44228-log4j-rce-0-day-mitigation/  |
 | Apache Notes | https://logging.apache.org/log4j/2.x/security.html |
 | CERT NZ Advisory | https://www.cert.govt.nz/it-specialists/advisories/log4j-rce-0-day-actively-exploited/ |
-| CrowdStrike Hunt | https://csfalcon.thetadev.services/#/fql/misc?id=apache-log4j |
-| Cloudflare Incident Timeline | https://blog.cloudflare.com/how-cloudflare-security-responded-to-log4j2-vulnerability/ |
+| Theta Advisory | https://www.theta.co.nz/news-blogs/cyber-security-blog/critical-security-advisory-log4j-vulnerability/ |
+| Threat Hunting FQL - CrowdStrike | https://www.reddit.com/r/crowdstrike/comments/rda0ls/20211210_cool_query_friday_hunting_apache_log4j/ |
+| Vulnerability Analysis & Mitigations - CrowdStrike | https://www.crowdstrike.com/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/ |
+| Incident Timeline - Cloudfalre | https://blog.cloudflare.com/how-cloudflare-security-responded-to-log4j2-vulnerability/ |
+| Log4j Dependents - Open Source Insights | https://deps.dev/maven/log4j%3Alog4j/1.2.17/dependents |
+| Honeynet Analysis - Greynoise | https://www.greynoise.io/viz/query/?gnql=tags%3A%22Apache%20Log4j%20RCE%20Attempt%22 |
+| SANS ISC Forum | https://isc.sans.edu/forums/diary/RCE+in+log4j+Log4Shell+or+how+things+can+get+bad+quickly/28120 |
+| GitHub  Advisory | https://github.com/advisories/GHSA-jfh8-c2jp-5v3q |
+| Technical Analysis - Fastly | https://www.fastly.com/blog/digging-deeper-into-log4shell-0day-rce-exploit-found-in-log4j |
+| Threat Indicators - Talos | https://blog.talosintelligence.com/2021/12/apache-log4j-rce-vulnerability.html |
+| Reddit Thread - Huntress Labs | https://www.reddit.com/r/msp/comments/rdba36/critical_rce_vulnerability_is_affecting_java/ |
+| Hashes - Vulnerable Versions & Paths | https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes |
 
 ### Known Vulnerable Applications
 
+> This vulnerability affects countless versions of various platforms and as such, will never be a full list of potentially affected services.
+
 ```
 N-Able Ncentral
-Vmware VSCA
 Logstash
 Service Now
 Redis
@@ -39,6 +50,31 @@ Apache Struts2
 Apache Solr
 Apache Druid
 Apache Flink
+VMware Horizon
+VMware vCenter Server
+VMware HCX
+VMware NSX-T Data Center
+VMware Unified Access Gateway
+VMware WorkspaceOne Access
+VMware Identity Manager 
+VMware vRealize Operations
+VMware vRealize Log Insight
+VMware vRealize Automation
+VMware Telco Cloud Automation
+VMware Site Recovery Manager
+VMware Carbon Black Cloud Workload Appliance
+VMware Tanzu GemFire
+VMware Tanzu Greenplum
+VMware Tanzu Operations Manager
+VMware Tanzu Application Service for VMs
+VMware Tanzu Kubernetes Grid Integrated Edition
+VMware Tanzu Observability by Wavefront Nozzle
+Healthwatch for Tanzu Application Service
+Spring Cloud Services for VMware Tanzu
+Spring Cloud Gateway for VMware Tanzu
+Spring Cloud Gateway for Kubernetes
+API Portal for VMware Tanzu
+Single Sign-On for VMware Tanzu Application Service
 ```
 
 ### View Patch Differentials

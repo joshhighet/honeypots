@@ -10,6 +10,7 @@
 | Apache Notes | https://logging.apache.org/log4j/2.x/security.html |
 | CERT NZ Advisory | https://www.cert.govt.nz/it-specialists/advisories/log4j-rce-0-day-actively-exploited/ |
 | CrowdStrike Hunt | https://csfalcon.thetadev.services/#/fql/misc?id=apache-log4j |
+| Cloudflare Incident Timeline | https://blog.cloudflare.com/how-cloudflare-security-responded-to-log4j2-vulnerability/ |
 
 ### Known Vulnerable Applications
 
@@ -37,4 +38,13 @@ Apache Struts2
 Apache Solr
 Apache Druid
 Apache Flink
+```
+
+### View Patch Differentials
+
+```shell
+git clone https://gitbox.apache.org/repos/asf/logging-log4j2.git
+cd logging-log4j2
+git fetch --tags
+git log -u rel/2.14.1..HEAD -- log4j-core
 ```

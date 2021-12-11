@@ -4,6 +4,7 @@
 
 | doc | link |
 |---|---|
+| Theta Full Advisory | https://www.theta.co.nz/news-blogs/cyber-security-blog/critical-security-advisory-log4j-vulnerability/ |\
 | Exploitation Detection | https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b |
 | Technical Blog | https://www.lunasec.io/docs/blog/log4j-zero-day/ |
 | Mitigation Advice | https://blog.cloudflare.com/cve-2021-44228-log4j-rce-0-day-mitigation/  |

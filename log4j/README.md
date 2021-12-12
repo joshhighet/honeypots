@@ -77,6 +77,30 @@ API Portal for VMware Tanzu
 Single Sign-On for VMware Tanzu Application Service
 ```
 
+### Basic Testing
+
+> This is not a catch-all test!
+
+1. Head to [canarytokens.org/generate](https://canarytokens.org/generate)
+2. Under `Select your token` scroll to the bottom and select `Log4Shell`
+
+<img width="1165" alt="Screen Shot 2021-12-13 at 9 18 18 AM" src="https://user-images.githubusercontent.com/17993143/145728091-de058b32-8f1c-4dd4-9614-ac7039c16b13.png">
+
+3. Enter an email address along with an optional comment to remind you what this was for if it triggers.
+
+> This is useful if you intend on testing more than one site!
+
+<img width="769" alt="Screen Shot 2021-12-13 at 9 20 11 AM" src="https://user-images.githubusercontent.com/17993143/145728139-0777db08-8733-4cb7-bfc8-3855bffbb7a7.png">
+
+4. Copy the output string and attempt to submit this through forms on your site. 
+> An equally beneficial test is to set this as your browser's user-agent - See [how to change your user agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/) 
+
+<img width="473" alt="Screen Shot 2021-12-13 at 9 21 23 AM" src="https://user-images.githubusercontent.com/17993143/145728188-635cecb5-a5a6-4ee7-9199-202346b88be5.png">
+
+4. In the case your test was successful, you'll find an alert has been send to them email youy listed within Step 3
+
+
+
 ### View Patch Differentials
 
 ```shell

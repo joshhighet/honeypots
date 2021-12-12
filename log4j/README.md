@@ -93,11 +93,12 @@ Single Sign-On for VMware Tanzu Application Service
 <img width="769" alt="Screen Shot 2021-12-13 at 9 20 11 AM" src="https://user-images.githubusercontent.com/17993143/145728139-0777db08-8733-4cb7-bfc8-3855bffbb7a7.png">
 
 4. Copy the output string and attempt to submit this through forms on your site. 
+
 > An equally beneficial test is to set this as your browser's user-agent - See [how to change your user agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/) 
 
 <img width="473" alt="Screen Shot 2021-12-13 at 9 21 23 AM" src="https://user-images.githubusercontent.com/17993143/145728188-635cecb5-a5a6-4ee7-9199-202346b88be5.png">
 
-4. In the case your test was successful, you'll find an alert has been send to them email youy listed within Step 3
+5. In the case your test was successful, you'll find an alert has been sent to them email you listed within Step 3
 
 <img width="639" alt="Screen Shot 2021-12-13 at 9 29 08 AM" src="https://user-images.githubusercontent.com/17993143/145728453-1fbfbac6-c546-4689-a00d-6918bb05f39d.png">
 

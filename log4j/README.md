@@ -99,6 +99,9 @@ Single Sign-On for VMware Tanzu Application Service
 
 4. In the case your test was successful, you'll find an alert has been send to them email youy listed within Step 3
 
+<img width="639" alt="Screen Shot 2021-12-13 at 9 29 08 AM" src="https://user-images.githubusercontent.com/17993143/145728453-1fbfbac6-c546-4689-a00d-6918bb05f39d.png">
+
+<img width="800" alt="Screen Shot 2021-12-13 at 9 29 25 AM" src="https://user-images.githubusercontent.com/17993143/145728464-f612b0c7-805f-4bc0-a441-f15974a7aa22.png">
 
 
 ### View Patch Differentials

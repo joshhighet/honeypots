@@ -25,57 +25,7 @@
 
 ### Known Vulnerable Applications
 
-> This vulnerability affects countless versions of various platforms and as such, will never be a full list of potentially affected services.
-
-```
-N-Able Ncentral
-Logstash
-Service Now
-Redis
-Splunk
-Confluence
-Jira
-Jenkins
-Webex
-Kafka
-Steam
-ManageEngine Service Desk Plus
-Sonarcube
-Palo Alto Panorama
-IBM Qradar
-Webex
-Connectwise
-ESET's Management Portals
-Apache Struts2
-Apache Solr
-Apache Druid
-Apache Flink
-VMware Horizon
-VMware vCenter Server
-VMware HCX
-VMware NSX-T Data Center
-VMware Unified Access Gateway
-VMware WorkspaceOne Access
-VMware Identity Manager 
-VMware vRealize Operations
-VMware vRealize Log Insight
-VMware vRealize Automation
-VMware Telco Cloud Automation
-VMware Site Recovery Manager
-VMware Carbon Black Cloud Workload Appliance
-VMware Tanzu GemFire
-VMware Tanzu Greenplum
-VMware Tanzu Operations Manager
-VMware Tanzu Application Service for VMs
-VMware Tanzu Kubernetes Grid Integrated Edition
-VMware Tanzu Observability by Wavefront Nozzle
-Healthwatch for Tanzu Application Service
-Spring Cloud Services for VMware Tanzu
-Spring Cloud Gateway for VMware Tanzu
-Spring Cloud Gateway for Kubernetes
-API Portal for VMware Tanzu
-Single Sign-On for VMware Tanzu Application Service
-```
+https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592
 
 ### Basic Testing
 

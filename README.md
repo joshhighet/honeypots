@@ -12,4 +12,4 @@ Gain insight into emerging and trending attacks within an instrumented environme
 [thpot](https://manpages.ubuntu.com/manpages/bionic/man8/thpot.8.html)
 
 ---
-- 2021 <a href="https://theta.co.nz" target="_blank">Theta</a>.
+[Theta](https://www.theta.co.nz/cyber)

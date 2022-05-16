@@ -1,0 +1,7 @@
+pki/*.cer
+pki/*.pfx
+pki/*.csr
+pki/*.key
+pki/*.crt
+.DS_Store
+omi.*.vmip

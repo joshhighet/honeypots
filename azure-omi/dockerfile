@@ -2,12 +2,13 @@ FROM httpd:latest
 
 LABEL org.opencontainers.image.source https://github.com/joshhighet/honeypots
 
+RUN mkdir /weblogs
 RUN apt-get update -yy
 RUN apt-get upgrade -yy
-RUN apt-get install openssl libapache2-mod-security2 -yy
-RUN mkdir /azhd
+
+RUN apt-get install -y openssl libapache2-mod-security2
 
 COPY pki/ /usr/local/apache2/conf/
-COPY html_assets/ /usr/local/apache2/htdocs/
+COPY html/ /usr/local/apache2/htdocs/
 COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY modsecurity.conf /etc/modsecurity/modsecurity.conf

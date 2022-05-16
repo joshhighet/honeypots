@@ -1,5 +1,4 @@
 #!/bin/bash
-# theta.co.nz/cyber
 
 set -e
 
@@ -23,7 +22,7 @@ msexchangepot \
 --boot-disk-auto-delete \
 --boot-disk-size 24GB \
 --boot-disk-type pd-ssd \
---description 'https://github.com/thetanz/honeypots' \
+--description 'https://github.com/joshhighet/honeypots' \
 --machine-type e2-micro \
 --no-restart-on-failure \
 --zone australia-southeast1-b

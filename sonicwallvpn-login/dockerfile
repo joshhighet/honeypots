@@ -1,6 +1,6 @@
 FROM httpd:latest
 
-LABEL org.opencontainers.image.source https://github.com/thetanz/honeypots
+LABEL org.opencontainers.image.source https://github.com/joshhighet/honeypots
 
 RUN apt-get update -yy
 RUN apt-get upgrade -yy

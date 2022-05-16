@@ -83,7 +83,7 @@ The Application Gateway was submitted to Shodan at 18:22:37 - Sun 18 Oct 2020 NZ
 
     docker build -t sonicwall5135 .
     docker tag sonicwall5135 $your-cr-url.azurecr.io/pots/sonicwall5135
-    docker push thetahoneypots.azurecr.io/pots/sonicwall5135
+    docker push xxxxxxxxx.azurecr.io/pots/sonicwall5135
 
 ***PKI for Application Gateway***
 
